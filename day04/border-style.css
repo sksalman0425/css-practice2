@@ -1,0 +1,28 @@
+p.dotted {
+  border-style: dotted;
+}
+/* p.dashed represent that only p element of dashed class should apply border-style:dashed 
+ hence div tag element not get dashed border*/
+p.dashed {
+  border-style: dashed;
+}
+
+p.solid {
+  border-style: solid;
+}
+p.double {
+  border-style: double;
+}
+
+p.groove {
+  border-style: groove;
+}
+p.ridge {
+  border-style: ridge;
+}
+p.inset {
+  border-style: inset;
+}
+p.outset {
+  border-style: outset;
+}

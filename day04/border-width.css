@@ -1,0 +1,43 @@
+div {
+    /* border-top-style: dashed;
+    border-left-style: dotted;
+    border-bottom-style: solid;
+    border-right-style: double; */
+    border-style: dashed dotted;
+  }
+  
+  p.one {
+    border-style: dashed dotted solid double;
+    /* step 1 -- dashed--all four side
+    step 2-- right and left dotted
+    step 3-- bottom solid 
+  step 4-left-double */
+    border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+    border-color: blue;
+  }
+  
+  p.two {
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+  }
+  
+  p.three {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+  }
+  
+  p.four {
+    border-style: dotted;
+    border-width: thick;
+  }
+  
+  p.five {
+    border-style: double;
+    border-width: 25px;
+  }
+  
+  p.six {
+    border-style: double;
+    border-width: thick;
+  }
