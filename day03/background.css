@@ -1,0 +1,24 @@
+body {
+    /* background-color: lightblue; */
+    background-image: url("./images/img_tree.png"), url("./images/paper.png");
+    /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+    background-repeat: no-repeat;
+  
+    background-position: center;
+    /* background-size: 250px;
+    background-position: right top;
+    margin-right: 200px; */
+    background-attachment: fixed;
+    /* background: lightblue right top; */
+  }
+  
+  /* h1 {
+    background-color: rgba(0, 128, 0, 0.1);
+  }
+  p {
+    color: aliceblue;
+    background-color: black;
+  }
+  div {
+    background-color: azure;
+  } */
