@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid layout</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            background: #eee; /*background property overide the background-color property*/
+            width: 700px;
+            height: 500px;
+            margin: 10px 10px 10px 15px; /* it is outside the container*/
+            padding: 50px 25px 50px 25px; /* it is inside the container*/
+            display: grid;
+            /* grid-template-columns: 150px 200px 250px; columns property overide the row property */
+            /* grid-template-columns: 150px 200px auto ; third colm automatically takes width according to available width*/
+            /*grid-template-columns: 1fr 2fr auto; fr means fraction */
+            grid-template-columns: repeat(2,100px) 150px;
+            grid-template-rows: 100px 150px 250px;
+            grid-gap:10px;
+
+
+        }
+        .items1{
+            background: red;
+        }
+        .items2{
+            background: green;
+        }
+        .items3{
+            background: yellow;
+        }
+        .items4{
+            background: blue;
+        }
+        .items5{
+            background: violet;
+        }
+        .items6{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1> css grid layout</h1>
+    <div class="container">
+        <div class="items1"> first </div>
+           <div class="items2"> second </div>
+              <div class="items3"> third </div>
+                 <div class="items4"> fourth </div>
+                    <div class="items5"> fifth </div>
+                       <div class="items6"> six </div>
+
+    </div>
+
+    
+</body>
+</html>
