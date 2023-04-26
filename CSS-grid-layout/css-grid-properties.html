@@ -19,15 +19,30 @@
             /*grid-template-columns: 1fr 2fr auto; fr means fraction */
             grid-template-columns: repeat(2,100px) 150px;
             grid-template-rows: 100px 150px 250px;
-            grid-gap:10px;
+            /* grid-row-gap: 10px; only rows are seprated by 10 pixel */
+            /* grid-column-gap: 20px; only columns are seprated by 20 pixel */
+            /* grid-gap:10px 20px; 10px applies to  rows and 20px applies to columns */
+            grid-gap: 20px; /* 20px applies to both rows and columns*/
 
 
         }
         .items1{
             background: red;
+            /* grid-row-start: 2 ;
+            grid-row-end: 3; it indicate grid item ends at grid line 3 horizontally */
+            /* shorthand for grid-row-start and end */
+            /* grid-row: 2/3;  */
+            /* grid-column-start: 3;
+            grid-column-end: 4;it indicate grid item ends at grid line 4 vertically */
+             /* shorthand for grid-colunm-start and end */
+            /* grid-column: 3/4; */
+            /*further shorthand */
+            grid-area: 2/3/3/4;
+               
         }
         .items2{
             background: green;
+            grid-row: 2/-1;/* it indicate first to last cell merge*/
         }
         .items3{
             background: yellow;
@@ -40,6 +55,16 @@
         }
         .items6{
             background: orange;
+            /* grid-row-start: 1 ;
+            grid-row-end: 2; it indicate grid item ends at grid line 2 horizontally */
+             /* for spaning the items */
+            grid-row: 1/2;
+            /* grid-column-start: 1;
+            grid-column-end: 2;it indicate grid item ends at grid line 2 vertically */
+            /* grid-column: 1/4; */
+            /* or------------ */
+            /* grid-column: 1/ span 4;  it indicate how many cell have to merge */
+            grid-column: 1/-1; /* it indicate first to last cell merge*/
         }
     </style>
 </head>
